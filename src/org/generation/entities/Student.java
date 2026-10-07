@@ -5,11 +5,11 @@ public class Student {
     String lastName;
     int registration; //año de registro
     public int grade; // calificacion 0-100
-    int year; // 1-6
+    int year; //
 
     public Student(String firstName, String lastName, int registration, int grade, int year) {
-            this.firstName = firstName.toUpperCase();
-            this.lastName = lastName.toUpperCase();
+            this.firstName = (firstName.isBlank()) ? "EMPTY-N" : firstName;
+            this.lastName = (lastName.isBlank()) ? "EMPTY-LN" : lastName;
             this.registration = registration;
             this.grade = grade;
             this.year = year;
@@ -25,7 +25,7 @@ public class Student {
 
     public String printFullName(){
         String fullName = firstName + " " + lastName;
-        //System.out.println("Student full name: " + firstName + " " + lastName);
+        //System.out.println("Student full name: " + firstName + " " + lastName); comentado para usarlo en main y solo llamar el nombre
         return fullName;
     }//method printFullName
 
