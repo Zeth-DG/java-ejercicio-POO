@@ -33,9 +33,11 @@ public class StudentMain {
         courseJava.enroll(stu);
 
         double averageGrades = courseJava.calculateAverageGrade();
-        System.out.println(averageGrades);
+        System.out.println("=========Average grade on Java Course=========\n" + averageGrades);
 
+        System.out.println("===============Student ranking===============");
         courseJava.printRanking();
+        System.out.println("===Students with grades above group average===");
         courseJava.aboveAvergae();
 
         //System.out.println(students);

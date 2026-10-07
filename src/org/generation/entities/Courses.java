@@ -88,7 +88,7 @@ public class Courses {
             status = (student.grade <= average) ? "upon average grades" : "above average grades";
 
             if (status == "above average grades"){
-                System.out.println(fullName + " " + status);
+                System.out.println(fullName + " - " + status);
             }//if
         }//forEach
     }//aboutAverage
